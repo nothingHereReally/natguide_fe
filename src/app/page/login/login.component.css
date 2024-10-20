@@ -1,0 +1,79 @@
+*{
+  font-size: 15px;
+}
+div, button{
+  padding: 0px;
+  margin: 0px;
+  border: none;
+  background: transparent;
+}
+img{
+  max-width: 120px;
+}
+#container{ /* ✔ */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* horiz */
+  align-items: center; /* vertical */
+
+  min-height: 97vh;
+  min-width: 97vw;
+  gap: 90px;
+
+  margin: 0px;
+  padding: 0px;
+
+  /* background-image: url("/favicon.svg"); */
+  /* background-position: 50vw 50vh; */
+  /* background-repeat: no-repeat; */
+  /* background-size: 20%; */
+}
+#info-container{ /* ✔ */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* horiz */
+  align-items: center; /* vertical */
+  flex-wrap: wrap;
+
+  min-width: 10vw;
+  gap: 20px;
+}
+#info-container > div:nth-child(2) > input,
+#info-container > div:nth-child(3) > input{
+  border: transparent;
+  background: transparent;
+
+  border: none;
+  padding: 10px;
+  margin: 0px;
+  height: 100%;
+  width: 100%;
+  top: 0px;
+  left: 0px;
+
+  font-size: 15px;
+}
+#info-container > div:nth-child(2),
+#info-container > div:nth-child(3){
+  padding: 10px;
+  margin: 0px;
+
+  border-style: solid;
+  border-radius: 8px;
+  border-color: #F5B780;
+  border-width: 3px;
+  min-width: 320px;
+
+  display: flex;
+  justify-content: space-between;
+}
+#info-container > div:nth-child(4){
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* horiz */
+  align-items: center; /* vertical */
+
+  gap: 10%;
+}
+
+
