@@ -1,0 +1,27 @@
+#style{
+  font-style: normal;
+  font-weight: bold;
+  font-size: 15px;
+
+  color: #622525;
+  background-color: transparent;
+  border-radius: 8px;
+  border-color: #622525;
+  border-width: 1px;
+
+  padding: 5px;
+  margin: 5px;
+  cursor: pointer;
+
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+#style:hover {
+  color: #F5B780;
+  background-color: #B66F0B;
+
+  box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.25);
+}
+#style:active {
+  background-color: #A25B01;
+}
+
