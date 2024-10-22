@@ -7,13 +7,15 @@ import { AppComponent } from './app.component';
 import { ButtonComponent } from './essentials/button/button.component';
 import { LoginComponent } from './page/login/login.component';
 import { ButtonOutlineComponent } from './essentials/button-outline/button-outline.component';
+import { RegisterComponent } from './page/register/register.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ButtonComponent,
     LoginComponent,
-    ButtonOutlineComponent
+    ButtonOutlineComponent,
+    RegisterComponent
   ],
   imports: [
     BrowserModule,
