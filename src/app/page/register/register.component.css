@@ -1,8 +1,3 @@
-*{
-  color: var(--sc1);
-  font-size: 11px;
-  font-family: Roboto, system-ui, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
 #container{
   display: flex;
   flex-wrap: wrap;
