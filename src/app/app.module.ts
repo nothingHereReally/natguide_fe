@@ -8,6 +8,8 @@ import { ButtonComponent } from './essentials/button/button.component';
 import { LoginComponent } from './page/login/login.component';
 import { ButtonOutlineComponent } from './essentials/button-outline/button-outline.component';
 import { RegisterComponent } from './page/register/register.component';
+import { ForgotPasswordSendEmailComponent } from './page/forgot-password-send-email/forgot-password-send-email.component';
+import { ButtonSendComponent } from './essentials/button-send/button-send.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +17,9 @@ import { RegisterComponent } from './page/register/register.component';
     ButtonComponent,
     LoginComponent,
     ButtonOutlineComponent,
-    RegisterComponent
+    RegisterComponent,
+    ForgotPasswordSendEmailComponent,
+    ButtonSendComponent
   ],
   imports: [
     BrowserModule,
