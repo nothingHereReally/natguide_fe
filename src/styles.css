@@ -1,4 +1,19 @@
 /* You can add global styles to this file, and also import other style files */
+:root{
+  --pc1: #622525; /* maroon */
+  --pc2: #F5B780; /* light orange with litle brown */
+  --pc3: #B66F0B; /* dark orange with litle brown */
+  --pc3dark: #A25B01; /* more darker orange with litle brown */
+
+  --sc1: #040404; /* dark black */
+  --sc2: #FCFCFC; /* bright white */
+  --sc3: #E2E2E2; /* white(lilDim) */
+  --sc4: #373737; /* dark gray */
+
+  --tc1: #F62B2B; /* bright red */
+  --tc2: #1BC820; /* bright green */
+  --tc3: #EBEB38; /* pale yellow */
+}
 *{
   font-family: Roboto, system-ui, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-size: 11px;
