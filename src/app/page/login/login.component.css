@@ -5,31 +5,36 @@
 #container{
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center; /* x axis center */
   gap: 0px;
 
-  padding: 130px;
+  padding: 130px 20px;
   margin: 20px;
 }
 #form1st-and-logoword2nd-container{
   display: flex;
   flex-direction: row;
   justify-content: center;
-  align-items: center;
   gap: 60px;
   flex-wrap: wrap;
 
   padding: 10px;
   margin: 10px;
 }
-#form1st-and-logoword2nd-container > div:nth-child(1),
-#form1st-and-logoword2nd-container > div:nth-child(1) > div:nth-child(1){ /* form1st */
+#form1st-and-logoword2nd-container > div:nth-child(1){ /* form1st */
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  gap: 20px;
+  gap: 40px;
+
+  padding: 0px 0px 0px 50px;
+  margin: 0px;
+}
+#form1st-and-logoword2nd-container > div:nth-child(1) > div:nth-child(1){
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
 
   padding: 0px;
   margin: 0px;
@@ -42,7 +47,7 @@
   border-radius: 8px;
   border-width: 2px;
   border-style: solid;
-  border-color: #F5B780;
+  border-color: var(--pc2);
 
   padding: 0px;
   margin: 0px;
@@ -50,6 +55,7 @@
 }
 #form1st-and-logoword2nd-container > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > input,
 #form1st-and-logoword2nd-container > div:nth-child(1) > div:nth-child(1) > div:nth-child(2) > input{
+  color: var(--sc1);
   border-radius: 8px;
   width: 100%;
   padding: 10px;
@@ -57,11 +63,17 @@
 }
 #form1st-and-logoword2nd-container > div:nth-child(1) > div:nth-child(1) > div:nth-child(3){
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 20px;
+  gap: 10px;
   max-width: 170px;
+
+  padding: 5px;
+  margin: 10px;
+}
+#form1st-and-logoword2nd-container > div:nth-child(1) > div:nth-child(1) > div:nth-child(3) > div{
+  padding: 0px;
+  margin: 0px;
 }
 #form1st-and-logoword2nd-container > div:nth-child(2){ /* logoword 2nd */
   display: flex;
@@ -83,7 +95,7 @@
   max-width: 180px;
 }
 p{
-  color: #622525;
+  color: var(--pc1);
   font-size: 14px;
   max-width: 370px;
   text-wrap: wrap;

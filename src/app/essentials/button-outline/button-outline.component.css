@@ -3,10 +3,10 @@
   font-weight: bold;
   font-size: 11px;
 
-  color: #622525;
+  color: var(--pc1);
   background-color: transparent;
   border-radius: 8px;
-  border-color: #622525;
+  border-color: var(--pc1);
   border-width: 1px;
 
   padding: 5px;
@@ -16,12 +16,12 @@
   transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 #style:hover {
-  color: #F5B780;
-  background-color: #B66F0B;
+  color: var(--pc2);
+  background-color: var(--pc3);
 
   box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.25);
 }
 #style:active {
-  background-color: #A25B01;
+  background-color: var(--pc3dark);
 }
 
