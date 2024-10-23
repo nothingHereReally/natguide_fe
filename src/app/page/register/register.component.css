@@ -1,5 +1,96 @@
 *{
+  color: var(--sc1);
   font-size: 11px;
   font-family: Roboto, system-ui, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
+#container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
 
+  padding: 230px 20px;
+  margin: 20px;
+}
+#container > div:nth-child(1){ /* logo icon and logo word */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#container > div:nth-child(2){ /* registerForm username, email, ..., */
+  display: flex; /* repw, createAcc, login */
+  flex-direction: column;
+  align-items: flex-start;
+
+  padding: 10px;
+  margin: 10px;
+}
+#container > div:nth-child(2) > div:nth-child(1), /* username */
+#container > div:nth-child(2) > div:nth-child(2), /* email */
+#container > div:nth-child(2) > div:nth-child(3), /* pw */
+#container > div:nth-child(2) > div:nth-child(4){ /* retype pw */
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  gap: 10px;
+
+  padding: 5px;
+  margin: 5px;
+
+}
+input{
+  font-size: 14px;
+
+  min-height: 28px;
+  padding: 5px;
+  margin: 0px;
+
+  border-radius: 8px;
+  border: none;
+}
+#container > div:nth-child(2) > div:nth-child(1) > input,
+#container > div:nth-child(2) > div:nth-child(2) > input{
+  border-color: var(--pc2);
+  border-width: 1px;
+  border-style: solid;
+
+  /* width: 100%; */
+  flex: 1;
+}
+#container > div:nth-child(2) > div:nth-child(3) > div,
+#container > div:nth-child(2) > div:nth-child(4) > div{
+  display: flex;
+  flex: 1;
+
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 8px;
+  border-color: var(--pc2);
+}
+#container > div:nth-child(2) > div:nth-child(3) > div > input,
+#container > div:nth-child(2) > div:nth-child(4) > div > input{
+  flex: 1;
+}
+#container > div:nth-child(2) > div:nth-child(5){
+  align-self: center;
+}
+
+
+
+
+#logo-icon{
+  max-width: 90px;
+}
+#logo-word{
+  max-width: 280px;
+}
+label{
+  color: var(--pc1);
+  font-size: 14px;
+  font-weight: bold;
+}
+button{
+  border: transparent;
+  background: transparent;
+}
