@@ -11,6 +11,8 @@ import { RegisterComponent } from './page/register/register.component';
 import { ForgotPasswordSendEmailComponent } from './page/forgot-password-send-email/forgot-password-send-email.component';
 import { ButtonSendComponent } from './essentials/button-send/button-send.component';
 import { ForgotPasswordResetPasswordComponent } from './page/forgot-password-reset-password/forgot-password-reset-password.component';
+import { HomeComponent } from './page/home/home.component';
+import { ButtonAccComponent } from './essentials/button-acc/button-acc.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +23,9 @@ import { ForgotPasswordResetPasswordComponent } from './page/forgot-password-res
     RegisterComponent,
     ForgotPasswordSendEmailComponent,
     ButtonSendComponent,
-    ForgotPasswordResetPasswordComponent
+    ForgotPasswordResetPasswordComponent,
+    HomeComponent,
+    ButtonAccComponent
   ],
   imports: [
     BrowserModule,
