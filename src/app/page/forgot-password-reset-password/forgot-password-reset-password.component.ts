@@ -12,6 +12,8 @@ export class ForgotPasswordResetPasswordComponent {
   public rpwtype: string = "password";
 
   public clickedResetPassword(){
+    console.log("pw: ", this.usrpw);
+    console.log("rpw: ", this.usrrpw);
     console.log("clicked reset password ", Math.random());
   }
   public seeUnseePW(towhom: string = 'pw'){
