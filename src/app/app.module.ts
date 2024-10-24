@@ -10,6 +10,7 @@ import { ButtonOutlineComponent } from './essentials/button-outline/button-outli
 import { RegisterComponent } from './page/register/register.component';
 import { ForgotPasswordSendEmailComponent } from './page/forgot-password-send-email/forgot-password-send-email.component';
 import { ButtonSendComponent } from './essentials/button-send/button-send.component';
+import { ForgotPasswordResetPasswordComponent } from './page/forgot-password-reset-password/forgot-password-reset-password.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { ButtonSendComponent } from './essentials/button-send/button-send.compon
     ButtonOutlineComponent,
     RegisterComponent,
     ForgotPasswordSendEmailComponent,
-    ButtonSendComponent
+    ButtonSendComponent,
+    ForgotPasswordResetPasswordComponent
   ],
   imports: [
     BrowserModule,
