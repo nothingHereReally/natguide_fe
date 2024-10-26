@@ -1,4 +1,18 @@
 /* You can add global styles to this file, and also import other style files */
+@font-face{
+  font-family: oxygenfont;
+  src: url(/fonts/Oxygen-Regular.woff2) format('woff2');
+  font-weight: 400;
+  font-display: swap; /* use font-family
+  fallback/back-up till thisFont
+  is available */
+}
+@font-face{
+  font-family: oxygenfont;
+  src: url(/fonts/Oxygen-Bold.woff2) format('woff2');
+  font-weight: 700;
+  font-display: swap;
+}
 :root{
   --pc1: #622525; /* maroon */
   --pc2: #F5B780; /* light orange with litle brown */
@@ -15,7 +29,12 @@
   --tc3: #EBEB38; /* pale yellow */
 
   color: var(--sc1);
-  font-family: Roboto, system-ui, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  font-size: 11px;
+  font-family: oxygenfont;
+  font-size: 15px;
+
+  padding: 0px;
+  margin: 0px;
+
+  background-color: var(--sc3);
 }
 
