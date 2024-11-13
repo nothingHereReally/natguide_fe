@@ -8,6 +8,7 @@ import { Component } from '@angular/core';
 export class LoginComponent {
   usrname: string = "";
   usrpw: string = "";
+
   pwtype: string = "password";
   public clickedStartQuiz(){
     console.log("start quiz clicked", Math.random())

@@ -2,5 +2,7 @@
     id="style"
     type="button"
     (click)="onClick()"
-    >{{ btnText }}
+    >
+    <img [src]="icondir" alt="icon" *ngIf="icondir!=''">
+    {{ btnText }}
 </button>
