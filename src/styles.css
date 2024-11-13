@@ -27,6 +27,8 @@
   --tc1: #F62B2B; /* bright red */
   --tc2: #209324; /* relax green */
 
+  --pc2-25opacity: rgba(167, 36, 62, .25);
+
 
   font-family: oxygenfont, system-ui, sans-serif;
   font-size: 14px;
