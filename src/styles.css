@@ -1,21 +1,46 @@
-/* You can add global styles to this file, and also import other style files */
-:root{
-  --pc1: #622525; /* maroon */
-  --pc2: #F5B780; /* light orange with litle brown */
-  --pc3: #B66F0B; /* dark orange with litle brown */
-  --pc3dark: #A25B01; /* more darker orange with litle brown */
 
-  --sc1: #040404; /* dark black */
-  --sc2: #FCFCFC; /* bright white */
-  --sc3: #E2E2E2; /* white(lilDim) */
-  --sc4: #373737; /* dark gray */
-
-  --tc1: #F62B2B; /* bright red */
-  --tc2: #1BC820; /* bright green */
-  --tc3: #EBEB38; /* pale yellow */
-
-  color: var(--sc1);
-  font-family: Roboto, system-ui, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  font-size: 11px;
+@font-face{
+  font-family: oxygenfont;
+  src: url(/fonts/Oxygen-Regular.woff2) format('woff2');
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face{
+  font-family: oxygenfont;
+  src: url(/fonts/Oxygen-Bold.woff2) format('woff2');
+  font-weight: 700;
+  font-display: swap;
 }
 
+
+
+
+:root{
+  --pc1: #4E0824; /* dark maroon */
+  --pc2: #A7243E; /* dark peach */
+  --pc3: #E9876A; /* light peach */
+
+  --sc1: #1F1F1F; /* dark black */
+  --sc2: #F7F7F7; /* bright white */
+  --sc3: #E7E7E7; /* white(lilDim) */
+
+  --tc1: #F62B2B; /* bright red */
+  --tc2: #209324; /* relax green */
+
+
+  font-family: oxygenfont, system-ui, sans-serif;
+  font-size: 14px;
+  line-height: normal;
+  letter-spacing: normal;
+
+  color: var(--sc1);
+  background-color: var(--sc2);
+
+  padding: 0px;
+  margin: 0px;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}

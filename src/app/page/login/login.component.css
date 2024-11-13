@@ -1,109 +1,21 @@
+img{
+  max-width: 130px;
+}
 #container{
+  color: var(--pc3);
+  background: var(--sc2);
+  height: 100vh;
+
   display: flex;
   flex-direction: column;
-  align-items: center; /* x axis center */
-  gap: 0px;
-
-  padding: 130px 20px;
-  margin: 20px;
+  align-items: center;
 }
-#form1st-and-logoword2nd-container{
+#container > div {
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  gap: 60px;
-  flex-wrap: wrap;
-
-  padding: 10px;
-  margin: 10px;
 }
-#form1st-and-logoword2nd-container > div:nth-child(1){ /* form1st */
+#container > div > div{
   display: flex;
   flex-direction: column;
-  align-items: center;
-  gap: 40px;
-
-  padding: 0px 0px 0px 50px;
-  margin: 0px;
-}
-#form1st-and-logoword2nd-container > div:nth-child(1) > div:nth-child(1){
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 10px;
-
-  padding: 0px;
-  margin: 0px;
-}
-#form1st-and-logoword2nd-container > div:nth-child(1) > div:nth-child(1) > div:nth-child(1),
-#form1st-and-logoword2nd-container > div:nth-child(1) > div:nth-child(1) > div:nth-child(2){
-  display: flex;
-  justify-content: flex-start;
-
-  border-radius: 8px;
-  border-width: 2px;
-  border-style: solid;
-  border-color: var(--pc2);
-
-  padding: 0px;
-  margin: 0px;
-  width: 100%;
-}
-#form1st-and-logoword2nd-container > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > input,
-#form1st-and-logoword2nd-container > div:nth-child(1) > div:nth-child(1) > div:nth-child(2) > input{
-  color: var(--sc1);
-  border-radius: 8px;
-  width: 100%;
-  padding: 10px;
-  margin: 5px;
-}
-#form1st-and-logoword2nd-container > div:nth-child(1) > div:nth-child(1) > div:nth-child(3){
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 10px;
-  max-width: 170px;
-
-  padding: 5px;
-  margin: 10px;
-}
-#form1st-and-logoword2nd-container > div:nth-child(1) > div:nth-child(1) > div:nth-child(3) > div{
-  padding: 0px;
-  margin: 0px;
-}
-#form1st-and-logoword2nd-container > div:nth-child(2){ /* logoword 2nd */
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-
-  padding: 0px;
-  margin: 0px;
 }
 
-
-
-
-#logo-icon{
-  max-width: 100px;
-}
-#logo-word{
-  max-width: 180px;
-}
-p{
-  color: var(--pc1);
-  font-size: 14px;
-  max-width: 370px;
-  text-wrap: wrap;
-  text-align: center;
-}
-
-
-
-
-div, button, input{
-  padding: 0px;
-  margin: 0px;
-  border: none;
-  background: transparent;
-}
