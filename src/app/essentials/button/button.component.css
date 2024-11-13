@@ -1,25 +1,87 @@
-#style{
+button{
   font-style: normal;
   font-weight: normal;
-  font-size: 13.7px;
+  font-size: 1rem;
+  line-height: 157%;
+  letter-spacing: calc(1rem *0.09);
 
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+
+  margin: 0px;
+  padding: 0px;
+  border-radius: 32px;
+  border-color: transparent;
+
+  border: none;
+  cursor: pointer;
+
+  transition: background-color 0.3s ease;
+}
+
+
+
+
+.normal-style{
+  color: var(--pc3);
+  background-color: var(--pc2);
+}
+.normal-style:hover{
+  color: var(--pc1);
+  background-color: var(--pc3);
+}
+.normal-style:active{
+  color: var(--pc3);
+  background-color: var(--pc1);
+}
+
+.outline-style{
+  color: var(--pc1);
+  background-color: transparent;
+  border-color: var(--pc1);
+  border-style: solid;
+  border-width: 1px;
+}
+.outline-style:hover{
+  background-color: var(--pc2-25opacity);
+}
+.outline-style:active{
+  background-color: var(--pc3);
+}
+
+.navigation-style{
+  color: var(--pc1);
+  background-color: transparent;
+}
+.navigation-style:hover{
+  background-color: var(--pc2-25opacity);
+
+  text-decoration: underline;
+}
+.navigation-style:active{
   color: var(--pc3);
   background-color: var(--pc2);
 
-  padding: 10px;
-  margin: 5px;
-  border: none;
-  cursor: pointer;
-  border-radius: 32px;
+  text-decoration: underline;
+}
 
-  transition: background-color 0.3s ease, box-shadow 0.3s ease;
-}
-#style:hover {
-  color: var(--pc2);
-  background-color: var(--pc3);
 
-  box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.25);
+
+
+.normal-size{
+  padding: 15px 20px;
 }
-#style:active {
-  background-color: cyan;
+.small-size{
+  padding: 7px 12px;
 }
+
+
+
+
+.bold{
+  font-weight: bold;
+}
+
