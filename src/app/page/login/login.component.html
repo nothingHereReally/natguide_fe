@@ -4,22 +4,43 @@
 
 
 
+
+
   <div>
-    <div>
+    <div> <!-- login form start -->
       <div>
-        <label for="usrnm">Username</label>
-        <input type="text" [(ngModel)]="usrname" id="usrnm">
+        <input type="text" [(ngModel)]="usrname" placeholder="Username">
       </div>
       <div>
-        <label for="usrpw">Username</label>
-        <input [type]="pwtype" [(ngModel)]="usrpw" id="usrpw">
+        <input [type]="pwtype" [(ngModel)]="usrpw" placeholder="Password">
+        <button type="button" (click)="seeUnseePW()">
+          <img [src]="susdir" alt="eye icon">
+        </button>
       </div>
       <div>
-        <app-button btnText="Login" />
-        <app-button btnText="Register" />
-        <app-button btnText="Forgot Password" />
+        <app-button
+            [btnText]="'Login'"
+            iconname=""
+            isBold="bold"
+            (btnClick)="clickedLogin()"
+          />
+        <app-button
+            [btnText]="'Register'"
+            iconname=""
+            [style]="'outline-style'"
+            [size]="'small-size'"
+            (btnClick)="clickedRegister()"
+          />
+        <app-button
+            [btnText]="'Forgot Password'"
+            iconname=""
+            [style]="'outline-style'"
+            [size]="'small-size'"
+            (btnClick)="clickedForgotPW()"
+          />
       </div>
-    </div>
+    </div> <!-- login form end -->
+
 
     <div>
       <img src="/NATguide_word.svg" alt="NATguide word">
