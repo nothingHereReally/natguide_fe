@@ -10,11 +10,13 @@ export class LoginComponent {
   usrpw: string = "";
 
   pwtype: string = "password";
+  susdir: string = "/icons/sc1/icon_unsee.svg";
   public clickedStartQuiz(){
     console.log("start quiz clicked", Math.random())
   }
   public seeUnseePW(){
     this.pwtype = this.pwtype=="password"?"text":"password";
+    this.susdir = this.pwtype=="password"?"/icons/sc1/icon_unsee.svg":"/icons/sc1/icon_see.svg";
   }
   public clickedLogin(){
     console.log("username: ", this.usrname);

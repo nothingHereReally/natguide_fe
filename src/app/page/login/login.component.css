@@ -1,21 +1,145 @@
 img{
-  max-width: 130px;
+  max-height: 100px;
+}
+button{
+  border: transparent;
+  background-color: transparent;
+  padding: 5px;
+  margin: 0px;
 }
 #container{
-  color: var(--pc3);
+  color: var(--pc1);
   background: var(--sc2);
   height: 100vh;
 
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 0px;
+
+  padding: 0px 10px;
+  margin: 0px;
+
+  background-image: url("/background/bg_login.svg");
+  background-repeat: no-repeat;
+  background-size: 117%;
+  background-position-x: -130px;
+  background-position-y: 211px;
 }
-#container > div {
+#container > img:nth-child(1){
+  padding: 60px 0px 0px 0px;
+}
+#container > div{ /* inside are 2div loginForm, logoWord_paragrah */
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
+  gap: 130px;
+
+  justify-content: center;
+  align-items: center;
+
+  transition: var(--t-slow);
 }
-#container > div > div{
+#container > div > div{ /* 2div => inside are usrname, pw, 3btn, on2nd div are natguide word paragraph */
+  transition: var(--t-slow);
+}
+#container > div > div:nth-child(1){ /* inside are usrname, pw, 3btn */
   display: flex;
   flex-direction: column;
+  /* padding: 0px; */
+  gap: 30px;
+
+  max-width: 250px;
+}
+#container > div > div:nth-child(1) > div:nth-child(1),
+#container > div > div:nth-child(1) > div:nth-child(2){ /* usrname div, pw div */
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0px;
+
+  border-radius: 15px;
+  border-style: solid;
+  border-color: var(--pc3);
+  border-width: 1px;
+
+  width: 100%;
+
+  padding: 0px;
+  margin: 0px;
+}
+#container > div > div:nth-child(1) > div:nth-child(1) > input,
+#container > div > div:nth-child(1) > div:nth-child(2) > input{ /* usrname, pw */
+  border: transparent;
+  border-radius: 16px;
+  background-color: transparent;
+
+  font-size: 1rem;
+  line-height: 157%;
+  letter-spacing: calc(1rem *0.09);
+  color: var(--sc1);
+
+  flex-grow: 1;
+  width: 68%;
+  max-width: 100%;
+
+  padding: 10px;
+  margin: 0px;
+}
+#container > div > div:nth-child(1) > div:nth-child(3){ /* 3btn( login, register, forgotpw) */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+#container > div > div:nth-child(2){ /* inside are logoWord, pargraph */
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+
+  max-width: 421px;
+  /* padding: 0px; */
+}
+#container > div > div:nth-child(2) > p{
+  font-size: 1rem;
+  line-height: 157%;
+  letter-spacing: calc(1rem *0.09);
+
+  max-width: 350px;
+  text-wrap: wrap;
+  text-align: center;
+}
+
+
+
+
+@media (min-aspect-ratio: 1/16) and (max-aspect-ratio: 20/16){
+  #container > div{
+    background-color: var(--pc2-25opacity);
+    backdrop-filter: var(--bf-blur);
+    -webkit-backdrop-filter: var(--bf-blur);
+
+    padding: 20px;
+    border-radius: 15px;
+    border: transparent;
+  }
+  #container > div > div{
+    padding: 20px;
+    border-radius: 15px;
+    border: transparent;
+
+    background-color: var(--pc3-50opacity);
+    backdrop-filter: var(--bf-blur);
+    -webkit-backdrop-filter: var(--bf-blur);
+  }
+  #container > div > div:nth-child(1) > div:nth-child(1),
+  #container > div > div:nth-child(1) > div:nth-child(2){
+    border-color: var(--pc1);
+  }
 }
 

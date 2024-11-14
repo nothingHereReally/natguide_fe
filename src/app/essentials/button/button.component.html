@@ -1,8 +1,19 @@
 <button
-    id="style"
     type="button"
+
     (click)="onClick()"
+    (mouseenter)="onHover()"
+    (mouseleave)="onHoverDone()"
+    (mousedown)="onPressing()"
+    (mouseup)="onHover()"
+    [ngClass]="[style, size, isBold]"
     >
-    <img [src]="icondir" alt="icon" *ngIf="icondir!=''">
+
+
+    <ng-container *ngIf="iconname!=''">
+      <img [src]="icondir" alt="iconname INvalid">
+    </ng-container>
     {{ btnText }}
+
+
 </button>
