@@ -12,13 +12,25 @@
       <div> <!-- Start div inside usrname, email, ...rpw -->
         <div>
           <label for="usr-nm">Username</label>
-          <input type="text" [(ngModel)]="usrname" id="usr-nm" placeholder="Username">
+          <input
+              type="text"
+              [(ngModel)]="usrname"
+              id="usr-nm"
+              placeholder="Username"
+              (keyup.enter)="clickedCreateAcc()"
+          >
         </div>
 
 
         <div>
           <label for="usr-email">Email</label>
-          <input type="text" [(ngModel)]="usremail" id="usr-email" placeholder="you@example.com">
+          <input
+              type="text"
+              [(ngModel)]="usremail"
+              id="usr-email"
+              placeholder="you@example.com"
+              (keyup.enter)="clickedCreateAcc()"
+          >
         </div>
 
 
@@ -26,7 +38,13 @@
           <label for="usr-pw">Password</label>
           <div>
 
-            <input [type]="pwtype" [(ngModel)]="usrpw" id="usr-pw" placeholder="Password">
+            <input
+                [type]="pwtype"
+                [(ngModel)]="usrpw"
+                id="usr-pw"
+                placeholder="Password"
+                (keyup.enter)="clickedCreateAcc()"
+            >
             <button type="button" (click)="seeUnseePW('pw')">
               <img [src]="pwidir" alt="visibility icon">
             </button>
@@ -39,7 +57,13 @@
           <label for="usr-rpw">Retype Password</label>
           <div>
 
-            <input [type]="rpwtype" [(ngModel)]="usrrpw" id="usr-rpw" placeholder="Password">
+            <input
+                [type]="rpwtype"
+                [(ngModel)]="usrrpw"
+                id="usr-rpw"
+                placeholder="Password"
+                (keyup.enter)="clickedCreateAcc()"
+            >
             <button type="button" (click)="seeUnseePW('rpw')">
               <img [src]="rpwidir" alt="visibility icon">
             </button>

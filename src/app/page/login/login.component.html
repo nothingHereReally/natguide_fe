@@ -9,10 +9,20 @@
   <div>
     <div> <!-- login form start -->
       <div>
-        <input type="text" [(ngModel)]="usrname" placeholder="Username">
+        <input
+          type="text"
+          [(ngModel)]="usrname"
+          placeholder="Username"
+          (keyup.enter)="clickedLogin()"
+        >
       </div>
       <div>
-        <input [type]="pwtype" [(ngModel)]="usrpw" placeholder="Password">
+        <input
+          [type]="pwtype"
+          [(ngModel)]="usrpw"
+          placeholder="Password"
+          (keyup.enter)="clickedLogin()"
+        >
         <button type="button" (click)="seeUnseePW()">
           <img [src]="susdir" alt="eye icon">
         </button>

@@ -1,0 +1,33 @@
+<div id="outer">
+  <div id="container">
+    <div>
+      <label for="usr-email">Provide Email to reset password</label>
+      <input
+          type="email"
+          [(ngModel)]="usremail"
+          id="usr-email"
+          placeholder="myemail@example.com"
+          (keyup.enter)="clickedSubmitEmail()"
+      >
+      <app-button
+          btnText="Submit Email"
+          iconname="send"
+          [size]="'small-size'"
+          (btnClick)="clickedSubmitEmail()"
+          />
+    </div>
+
+
+
+
+    <div>
+      <app-button
+          btnText="Cancel"
+          iconname=""
+          [style]="'outline-style'"
+          (btnClick)="clickedCancel()"
+          />
+        <p>You will receive a link to your email to reset your Account's password</p>
+    </div>
+  </div>
+</div>
