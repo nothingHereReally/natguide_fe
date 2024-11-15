@@ -1,3 +1,68 @@
 <div id="container">
-  register component
+  <div>
+    <div>
+      <img src="/favicon.svg" alt="logo icon">
+      <img src="/NATguide_word.svg" alt="logo icon">
+    </div>
+
+
+
+
+    <div>
+      <div> <!-- Start div inside usrname, email, ...rpw -->
+        <div>
+          <label for="usr-nm">Username</label>
+          <input type="text" [(ngModel)]="usrname" id="usr-nm" placeholder="Username">
+        </div>
+
+
+        <div>
+          <label for="usr-email">Email</label>
+          <input type="text" [(ngModel)]="usremail" id="usr-email" placeholder="you@example.com">
+        </div>
+
+
+        <div>
+          <label for="usr-pw">Password</label>
+          <div>
+
+            <input [type]="pwtype" [(ngModel)]="usrpw" id="usr-pw" placeholder="Password">
+            <button type="button" (click)="seeUnseePW('pw')">
+              <img [src]="pwidir" alt="visibility icon">
+            </button>
+
+          </div>
+        </div>
+
+
+        <div>
+          <label for="usr-rpw">Retype Password</label>
+          <div>
+
+            <input [type]="rpwtype" [(ngModel)]="usrrpw" id="usr-rpw" placeholder="Password">
+            <button type="button" (click)="seeUnseePW('rpw')">
+              <img [src]="rpwidir" alt="visibility icon">
+            </button>
+
+          </div>
+        </div>
+      </div> <!-- End div inside usrname, email, ...rpw -->
+      <div>
+        <app-button
+            btnText="Create Account"
+            iconname=""
+            isBold="bold"
+            [style]="'normal-style'"
+            (btnClick)="clickedCreateAcc()"
+        />
+        <app-button
+            btnText="Login"
+            iconname=""
+            [style]="'outline-style'"
+            [size]="'small-size'"
+            (btnClick)="clickedLogin()"
+        />
+      </div>
+    </div>
+  </div>
 </div>
