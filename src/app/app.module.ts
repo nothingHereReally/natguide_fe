@@ -7,8 +7,10 @@ import { NgxChartsModule } from '@swimlane/ngx-charts';
 
 import { AppComponent } from './app.component';
 import { ButtonComponent } from './essentials/button/button.component';
+
 import { LoginComponent } from './page/login/login.component';
 import { RegisterComponent } from './page/register/register.component';
+import { ForgotpwComponent } from './page/forgotpw/forgotpw.component';
 import { HomeComponent } from './page/home/home.component';
 
 @NgModule({
@@ -18,6 +20,7 @@ import { HomeComponent } from './page/home/home.component';
     LoginComponent,
     RegisterComponent,
     HomeComponent,
+    ForgotpwComponent,
   ],
   imports: [
     BrowserModule,
