@@ -1,1 +1,23 @@
-<p>forgotpw works!</p>
+<div id="container">
+  <div>
+    <label for="usr-email">Provide Email to reset password</label>
+    <input type="email" [(ngModel)]="usremail" id="usr-email">
+    <app-button
+        btnText="Submit Email"
+        iconname="send"
+        [size]="'small-size'"
+        />
+  </div>
+
+
+
+
+  <div>
+    <app-button
+        btnText="Cancel"
+        iconname=""
+        [style]="'outline-style'"
+        />
+      <p>You will receive a link to your email to reset your password</p>
+  </div>
+</div>
