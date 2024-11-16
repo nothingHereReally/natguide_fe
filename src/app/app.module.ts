@@ -12,6 +12,7 @@ import { LoginComponent } from './page/login/login.component';
 import { RegisterComponent } from './page/register/register.component';
 import { ForgotpwComponent } from './page/forgotpw/forgotpw.component';
 import { HomeComponent } from './page/home/home.component';
+import { ResetpwComponent } from './page/resetpw/resetpw.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { HomeComponent } from './page/home/home.component';
     RegisterComponent,
     HomeComponent,
     ForgotpwComponent,
+    ResetpwComponent,
   ],
   imports: [
     BrowserModule,

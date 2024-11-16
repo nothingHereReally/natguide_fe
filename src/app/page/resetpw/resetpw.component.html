@@ -1,0 +1,49 @@
+<div id="outer">
+  <div id="container">
+    <div>
+      <div>
+        <label for="usr-pw">New Password</label>
+        <div>
+          <input
+              [type]="typepw"
+              [(ngModel)]="usrpw"
+              (keyup.enter)="clickedResetpw()"
+              placeholder="**********"
+              id="usr-pw"
+              >
+          <button type="button" (click)="typePW('pw')">
+            <img [src]="eyepwdir" alt="eye icon">
+          </button>
+        </div>
+      </div>
+
+
+      <div>
+        <label for="usr-rpw">Retype Password</label>
+        <div>
+          <input
+              [type]="typerpw"
+              [(ngModel)]="usrrpw"
+              (keyup.enter)="clickedResetpw()"
+              placeholder="**********"
+              id="usr-rpw"
+              >
+          <button type="button" (click)="typePW('rpw')">
+            <img [src]="eyerpwdir" alt="eye icon">
+          </button>
+        </div>
+      </div>
+    </div>
+
+
+
+
+    <app-button
+        btnText="Reset Password"
+        iconname=""
+        [style]="'outline-style'"
+        (btnClick)="clickedResetpw()"
+        />
+  </div>
+</div>
+
