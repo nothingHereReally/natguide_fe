@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-home',
@@ -6,7 +7,7 @@ import { Component } from '@angular/core';
   styleUrl: './home.component.css'
 })
 export class HomeComponent {
-  constructor(){}
+  constructor(private route: Router){}
 
 
 
@@ -18,10 +19,10 @@ export class HomeComponent {
     console.log("light mode clicked: ", Math.random());
   }
   public clickedLogin(): void{
-    console.log("clicked log in: ", Math.random());
+    this.route.navigate(["login"]);
   }
   public clickedSignup(): void{
-    console.log("clicked sign up: ", Math.random());
+    this.route.navigate(["register"]);
   }
   public clickedStartquiz(): void{
     console.log("clicked start quiz: ", Math.random());
