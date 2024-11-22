@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-forgotpw',
@@ -8,11 +9,19 @@ import { Component } from '@angular/core';
 export class ForgotpwComponent {
   public usremail: string = "";
 
+
+
+
+  constructor(private route: Router){}
+
+
+
+
   public clickedSubmitEmail(){
     console.log("email: ", this.usremail);
     console.log("clicked submit: ", Math.random());
   }
   public clickedCancel(){
-    console.log("clicked cancel: ", Math.random());
+    this.route.navigate(["login"]);
   }
 }
