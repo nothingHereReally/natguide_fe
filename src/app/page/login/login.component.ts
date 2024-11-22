@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-login',
@@ -11,6 +12,15 @@ export class LoginComponent {
 
   pwtype: string = "password";
   susdir: string = "/icons/sc1/icon_unsee.svg";
+
+
+
+
+  constructor(private route: Router){}
+
+
+
+
   public clickedStartQuiz(){
     console.log("start quiz clicked", Math.random())
   }
@@ -24,9 +34,9 @@ export class LoginComponent {
     console.log("login clicked", Math.random())
   }
   public clickedRegister(){
-    console.log("register clicked", Math.random())
+    this.route.navigate(["register"]);
   }
   public clickedForgotPW(){
-    console.log("forgot pw clicked", Math.random())
+    this.route.navigate(["forgot-password"]);
   }
 }
