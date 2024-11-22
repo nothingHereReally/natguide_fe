@@ -65,16 +65,19 @@
                   btnText="About Us"
                   iconname=""
                   [style]="'navigation-style'"
+                  (btnClick)="clickedAboutUs()"
                   />
               <app-button
                   btnText="Contact Info"
                   iconname=""
                   [style]="'navigation-style'"
+                  (btnClick)="clickedCinfo()"
                   />
               <app-button
                   btnText="Report a Problem"
                   iconname=""
                   [style]="'navigation-style'"
+                  (btnClick)="clickedReportProb()"
                   />
             </div>
             <div>
@@ -82,16 +85,19 @@
                   btnText="FAQs"
                   iconname=""
                   [style]="'navigation-style'"
+                  (btnClick)="clickedFAQ()"
                   />
               <app-button
                   btnText="Privacy Policy"
                   iconname=""
                   [style]="'navigation-style'"
+                  (btnClick)="clickedPrivacyPolicy()"
                   />
               <app-button
                   btnText="Terms Of Service"
                   iconname=""
                   [style]="'navigation-style'"
+                  (btnClick)="clickedTermsOfService()"
                   />
             </div>
           </div>
