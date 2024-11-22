@@ -7,6 +7,7 @@ import { NgxChartsModule } from '@swimlane/ngx-charts';
 
 import { AppComponent } from './app.component';
 import { ButtonComponent } from './essentials/button/button.component';
+import { WarningComponent } from './essentials/warning/warning.component';
 
 import { LoginComponent } from './page/login/login.component';
 import { RegisterComponent } from './page/register/register.component';
@@ -18,6 +19,7 @@ import { ResetpwComponent } from './page/resetpw/resetpw.component';
   declarations: [
     AppComponent,
     ButtonComponent,
+    WarningComponent,
     LoginComponent,
     RegisterComponent,
     HomeComponent,
