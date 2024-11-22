@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-register',
@@ -15,6 +16,14 @@ export class RegisterComponent {
   public pwidir: string = "/icons/sc1/icon_unsee.svg";
   public rpwidir: string = "/icons/sc1/icon_unsee.svg";
 
+
+
+
+  constructor(private route: Router){}
+
+
+
+
   public clickedCreateAcc(){
     console.log("username: ", this.usrname);
     console.log("usremail: ", this.usremail);
@@ -23,7 +32,7 @@ export class RegisterComponent {
     console.log("clicked create account ", Math.random());
   }
   public clickedLogin(){
-    console.log("clicked log in ", Math.random());
+    this.route.navigate(["login"]);
   }
   public seeUnseePW(towhom: string="pw"){
     if( towhom=="pw" ){
