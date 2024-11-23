@@ -9,7 +9,7 @@ import { Input, Output, EventEmitter } from '@angular/core';
 export class WarningComponent {
   constructor(){}
   @Input() public title: string = "Warning Title blah ladida blah blah ";
-  @Input() public what: string = "Warning description, blah blah blah ladida blah blah blah blah ladida blah blah blah blah ladida blah blah blah blah ladida blah blah blah";
+  @Input() public what_dc: string = "Warning description, blah blah blah ladida blah blah blah blah ladida blah blah blah blah ladida blah blah blah blah ladida blah blah blah";
   @Input() public txtNo: string = "Cancel";
   @Input() public txtNo_iconname: string = "delete";
   @Input() public txtYes: string = "Yes";
