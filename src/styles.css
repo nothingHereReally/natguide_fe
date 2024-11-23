@@ -30,9 +30,12 @@
   --pc2-25opacity: rgba(167, 36, 62, .25);
   --pc3-25opacity: rgba(233, 135, 106, .25);
   --pc3-50opacity: rgba(233, 135, 106, .5);
+  --tc1-25opacity: rgba(246, 43, 43, .25);
+
   --bf-blur: blur(7px); /* backdrop-filter: var(--bf-blur) */
   --t-reg: background-color 0.4s ease, padding 0.4s ease;
   --t-slow: background-color 1.1s ease, padding 1.1s ease;
+  --sbox: 0px 0px 9px 3px rgba(0, 0, 0, 0.25);
 
 
   font-family: oxygenfont, system-ui, sans-serif;

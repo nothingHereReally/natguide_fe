@@ -3,11 +3,27 @@
 
     (click)="onClick()"
     (mouseenter)="onHover()"
-    (mouseleave)="onHoverDone()"
+    (mouseleave)="initIcon()"
     (mousedown)="onPressing()"
     (mouseup)="onHover()"
     [ngClass]="[style, size, isBold]"
     >
+    <!--
+      style:
+        normal-style
+        outline-style
+        navigation-style
+        danger-style
+
+
+      size:
+        normal-size
+        small-size
+
+
+      isBold:
+        bold
+    -->
 
 
     <ng-container *ngIf="iconname!=''">

@@ -141,10 +141,25 @@ button{
     background-color: var(--pc3-25opacity);
     backdrop-filter: var(--bf-blur);
   }
-#container > div > div:nth-child(2) > div:nth-child(1) > div:nth-child(1) > input,
-#container > div > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > input,
-#container > div > div:nth-child(2) > div:nth-child(1) > div > div{ /* input forms, username, email */
+  #container > div > div:nth-child(2) > div:nth-child(1) > div:nth-child(1) > input,
+  #container > div > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > input,
+  #container > div > div:nth-child(2) > div:nth-child(1) > div > div{ /* input forms, username, email */
     border-color: var(--pc1);
   }
+}
+
+
+
+
+
+
+
+
+#warning{
+  position: absolute;
+  top: 170px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 999;
 }
 

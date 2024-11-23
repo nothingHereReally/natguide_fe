@@ -1,4 +1,121 @@
-<div>
-  home component
+<div id="outer">
+  <div id="container">
+    <div>
+      <div>
+        <img src="/favicon.svg" alt="logo icon">
+        <img src="/NATguide_word.svg" alt="logo icon">
+      </div>
+      <div>
+        <app-button
+            btnText="Light Mode"
+            iconname="sun"
+            [style]="'navigation-style'"
+            (btnClick)="clickedLDmode()"
+            />
+        <div>
+          <app-button
+              btnText="Log in"
+              iconname=""
+              [style]="'navigation-style'"
+              (btnClick)="clickedLogin()"
+              />
+          <app-button
+              btnText="Sign up"
+              iconname=""
+              [style]="'navigation-style'"
+              (btnClick)="clickedSignup()"
+              />
+        </div>
+        <app-button
+            btnText="Start Quiz"
+            iconname=""
+            [style]="'outline-style'"
+            (btnClick)="clickedStartquiz()"
+            />
+      </div>
+    </div>
+
+
+
+
+    <div>
+      <div>
+        <div>
+          <p>For Elementary Students, Ace your NAT( Philippines ) Exam. With our help.</p>
+        </div>
+        <div>
+          <div>
+            <p>We’re Here to Help</p>
+            <ul>
+              <li>A simple and straightforward reviewer with questions and answer</li>
+              <li>Tailored to what you need to improve</li>
+              <li>The more you review, the better it sticks</li>
+              <li>Track improvement over time</li>
+            </ul>
+          </div>
+          <p>There isn't much support for a reviewer for the National Achievement Test in the Philippines, and students doesn’t have much support for an interactive tools to review their lessons. So we made one for you.</p>
+        </div>
+      </div>
+
+      <div>
+        <div>
+          <div>
+            <div>
+              <app-button
+                  btnText="About Us"
+                  iconname=""
+                  [style]="'navigation-style'"
+                  (btnClick)="clickedAboutUs()"
+                  />
+              <app-button
+                  btnText="Contact Info"
+                  iconname=""
+                  [style]="'navigation-style'"
+                  (btnClick)="clickedCinfo()"
+                  />
+              <app-button
+                  btnText="Report a Problem"
+                  iconname=""
+                  [style]="'navigation-style'"
+                  (btnClick)="clickedReportProb()"
+                  />
+            </div>
+            <div>
+              <app-button
+                  btnText="FAQs"
+                  iconname=""
+                  [style]="'navigation-style'"
+                  (btnClick)="clickedFAQ()"
+                  />
+              <app-button
+                  btnText="Privacy Policy"
+                  iconname=""
+                  [style]="'navigation-style'"
+                  (btnClick)="clickedPrivacyPolicy()"
+                  />
+              <app-button
+                  btnText="Terms Of Service"
+                  iconname=""
+                  [style]="'navigation-style'"
+                  (btnClick)="clickedTermsOfService()"
+                  />
+            </div>
+          </div>
+          <app-button
+              btnText="Language: English"
+              iconname=""
+              [style]="'navigation-style'"
+              (btnClick)="clickedLang()"
+              />
+        </div>
+        <app-button
+            btnText="Back to Top"
+            iconname="up"
+            [style]="'navigation-style'"
+            (btnClick)="clickedB2top()"
+            />
+      </div>
+    </div>
+  </div>
 </div>
 

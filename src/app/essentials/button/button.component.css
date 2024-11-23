@@ -68,6 +68,23 @@ button{
   text-decoration: underline;
 }
 
+.danger-style{
+  color: var(--tc1);
+  background-color: transparent;
+  border-color: var(--tc1);
+  border-style: solid;
+  border-width: 1px;
+
+  font-weight: bold;
+}
+.danger-style:hover{
+  background-color: var(--tc1-25opacity);
+}
+.danger-style:active{
+  color: var(--pc1);
+  background-color: var(--tc1);
+}
+
 
 
 

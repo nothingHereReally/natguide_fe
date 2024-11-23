@@ -11,8 +11,8 @@ export class ButtonComponent implements OnInit {
   @Input() public iconname: string = "redo";
 
   @Input() public style: string = "normal-style"; // color, bg
-  @Input() public isBold: string = "";  // font-weight
   @Input() public size: string = "normal-size";  // padding
+  @Input() public isBold: string = "";  // font-weight
 
   @Output() btnClick: EventEmitter<string> = new EventEmitter();
 
@@ -22,22 +22,34 @@ export class ButtonComponent implements OnInit {
     this.btnClick.emit();
   }
   public onHover(){
-    this.icondir = "/icons/pc1/icon_"+this.iconname+".svg";
-  }
-  public onHoverDone(){
-    if( this.iconname!="" && this.style=="normal-style"){
-      this.icondir = "/icons/pc3/icon_"+this.iconname+".svg";
-    }else if( this.iconname!="" ){
+    if( this.style!="danger-style" ){
       this.icondir = "/icons/pc1/icon_"+this.iconname+".svg";
+    }else{
+      this.icondir = "/icons/tc1/icon_"+this.iconname+".svg";
+    }
+  }
+  public initIcon(){
+    if( this.iconname!="" && this.style=="normal-style" ){
+      this.icondir = "/icons/pc3/icon_"+this.iconname+".svg";
+    }else if( this.iconname!="" &&
+    ( this.style=="outline-style" ||
+      this.style=="navigation-style")){
+      this.icondir = "/icons/pc1/icon_"+this.iconname+".svg";
+    }else if( this.iconname!="" && this.style=="danger-style" ){
+      this.icondir = "/icons/tc1/icon_"+this.iconname+".svg";
     }
   }
   public onPressing(){
-    if( this.iconname!="" && this.style!="outline-style"){
+    if( this.iconname!="" &&
+    ( this.style=="normal-style" ||
+      this.style=="navigation-style" )){
       this.icondir = "/icons/pc3/icon_"+this.iconname+".svg";
+    }else if( this.iconname!="" && this.style=="danger-style" ){
+      this.icondir = "/icons/pc1/icon_"+this.iconname+".svg";
     }
   }
 
   ngOnInit(){
-    this.onHoverDone();
+    this.initIcon();
   }
 }

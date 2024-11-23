@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-register',
@@ -14,6 +15,15 @@ export class RegisterComponent {
   public rpwtype: string = "password";
   public pwidir: string = "/icons/sc1/icon_unsee.svg";
   public rpwidir: string = "/icons/sc1/icon_unsee.svg";
+  public clklogin: boolean = false;
+
+
+
+
+  constructor(private route: Router){}
+
+
+
 
   public clickedCreateAcc(){
     console.log("username: ", this.usrname);
@@ -23,7 +33,7 @@ export class RegisterComponent {
     console.log("clicked create account ", Math.random());
   }
   public clickedLogin(){
-    console.log("clicked log in ", Math.random());
+    this.clklogin = true;
   }
   public seeUnseePW(towhom: string="pw"){
     if( towhom=="pw" ){
@@ -33,5 +43,15 @@ export class RegisterComponent {
       this.rpwtype = this.rpwtype=="password"?"text":"password";
       this.rpwidir = this.rpwtype=="password"?"/icons/sc1/icon_unsee.svg":"/icons/sc1/icon_see.svg";
     }
+  }
+
+
+
+
+  public clickedCancelRegister(){
+    this.route.navigate(["login"]);
+  }
+  public clickedContinueRegister(){
+    this.clklogin = false;
   }
 }
