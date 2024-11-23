@@ -1,3 +1,19 @@
+<div id="warning" *ngIf="clklogin">
+  <app-warning
+      [title]="'Cancel Registration'"
+      [what_dc]="'Are you sure you want to go to login? All data on the registration form will be lost.'"
+      [txtNo]="'Go Back'"
+      [txtYes]="'Yes, Cancel'"
+      [txtNo_iconname]="''"
+      [txtYes_iconname]="''"
+      (clkNo)="clickedContinueRegister()"
+      (clkYes)="clickedCancelRegister()"
+      />
+</div>
+
+
+
+
 <div id="container">
   <div>
     <div>

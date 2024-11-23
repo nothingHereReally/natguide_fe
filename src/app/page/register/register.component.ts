@@ -15,6 +15,7 @@ export class RegisterComponent {
   public rpwtype: string = "password";
   public pwidir: string = "/icons/sc1/icon_unsee.svg";
   public rpwidir: string = "/icons/sc1/icon_unsee.svg";
+  public clklogin: boolean = false;
 
 
 
@@ -32,7 +33,7 @@ export class RegisterComponent {
     console.log("clicked create account ", Math.random());
   }
   public clickedLogin(){
-    this.route.navigate(["login"]);
+    this.clklogin = true;
   }
   public seeUnseePW(towhom: string="pw"){
     if( towhom=="pw" ){
@@ -42,5 +43,15 @@ export class RegisterComponent {
       this.rpwtype = this.rpwtype=="password"?"text":"password";
       this.rpwidir = this.rpwtype=="password"?"/icons/sc1/icon_unsee.svg":"/icons/sc1/icon_see.svg";
     }
+  }
+
+
+
+
+  public clickedCancelRegister(){
+    this.route.navigate(["login"]);
+  }
+  public clickedContinueRegister(){
+    this.clklogin = false;
   }
 }
