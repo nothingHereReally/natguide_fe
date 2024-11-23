@@ -12,7 +12,7 @@
 
   border-radius: 15px;
 
-  box-shadow: 0px 0px 9px 3px rgba(0, 0, 0, 0.25);
+  box-shadow: var(--sbox);
 
   background-color: var(--tc1);
 }
