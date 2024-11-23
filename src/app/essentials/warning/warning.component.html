@@ -1,8 +1,33 @@
-<p>
-  <app-button
-    btnText="Danger Test"
-    iconname="delete"
-    [style]="'danger-style'"
-    />
-</p>
+<div id="container">
+  <div>
+    <div>
+      <div>
+      </div>
+      {{ title }}
+    </div>
+    <div>
+      {{ what }}
+    </div>
+  </div>
+
+
+
+
+  <div>
+    <app-button
+        [btnText]="txtNo"
+        [iconname]="txtNo_iconname"
+        [style]="'normal-style'"
+        [size]="'normal-size'"
+        (btnClick)="mclkNo()"
+        />
+    <app-button
+        [btnText]="txtYes"
+        [iconname]="txtYes_iconname"
+        [style]="'danger-style'"
+        [size]="'small-size'"
+        (btnClick)="mclkYes()"
+        />
+  </div>
+</div>
 
